@@ -1,0 +1,15 @@
+# Nixpacks configuration for Railway
+# This ensures PHP extensions are available
+
+[phases.setup]
+nixPkgs = [
+  "php82",
+  "composer",
+  "php82Extensions.gd",
+  "php82Extensions.mbstring",
+  "php82Extensions.xml",
+  "php82Extensions.zip",
+  "php82Extensions.curl",
+  "php82Extensions.openssl"
+]
+
